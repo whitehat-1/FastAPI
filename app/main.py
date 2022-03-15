@@ -11,13 +11,14 @@ app = FastAPI()
 
 ###pydantic basemodel (doing all the  validations and defining the schema for what it should look like at the front end)
 class post(BaseModel):
-    title: str
-    content: str
+    name: str
+    message: str
+    age: int
     published: bool = True
     rating: Optional[int] = None
 
-###saving postt in memory
-my_posts =[{"title": "API Tutorial", "content": "this is  my API content", "id":1},{"title":"fav foods", "content": "i like pizza", "id":2}]
+###saving post in memory
+my_posts =[{"name": "jerry michael", "message": "welcome to kodecamp","age":"25", "id":1},{"name":"jay michael", "message": "i like pizza","age":"27", "id":2}]
 
 ##root/home url
 @app.get("/")
