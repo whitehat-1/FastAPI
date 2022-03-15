@@ -1,3 +1,4 @@
+from datetime import datetime
 from operator import index
 from os import stat
 from typing import Optional
@@ -14,6 +15,7 @@ class post(BaseModel):
     name: str
     message: str
     age: int
+    createdate: Optional[datetime] = None
     published: bool = True
     rating: Optional[int] = None
 
