@@ -28,7 +28,7 @@ OR
 $ uvicorn app.main:app --reload
 
 
-# Open Beowser:
+# Open Browser:
 
 Visit or Open your browser at http://127.0.0.1:8000/ 
 
